@@ -1,0 +1,196 @@
+:root {
+    --link-color: #1a73e8;
+    --text-color: #202124;
+    --background-color: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+
+
+
+/* SECTION 1 */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+    align-items: center;
+    gap: 100px;
+}
+
+
+.hero-section .text{
+    flex: 5;
+}
+
+
+.hero-section .headshot{
+    flex: 1.5;
+}
+
+
+.hero-section .headshot img{
+    border:solid 2px rgb(68, 66, 66);
+    border-radius: 60%;
+    
+}
+
+.hero-section .links{
+    margin-top: 35px;
+}
+
+
+.hero-section .links a{
+    display: inline-block; /*when screen size decreases, the links will stay together along with their icons*/
+    margin-right: 25px;
+    padding: 5px 5px;
+    border: solid 2px var(--link-color);
+    border-radius: 5px;
+    transition:0.1s
+}
+
+
+.hero-section .links a:hover{
+    color: var(--text-color);
+    border: solid 2px var(--text-color);
+}
+
+
+.hero-section .text .Yo{
+    font-size: 60px;
+}
+
+
+
+
+/* SECTION 3 Skills */
+.skills-section h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+.skills-section .text{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 0 30px;
+}
+
+
+.skills-section .cells{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 120px;
+    
+
+}
+
+
+.skills-section .cells .cell{
+    border: solid 2px rgb(171, 168, 168);
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5px;
+    width: 200px;
+}
+
+
+.skills-section .cells .cell img{
+    width: 40px;
+    height: 40px;
+
+}
+
+
+.skills-section .cells .cell span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+    /* this if for the navbar on mobile */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a span{
+        display: none;
+        font-size: 22px;
+    }
+
+    .hero-section {
+        padding : 0 20px
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    /* this is for the hero section image on mobile
+    this will make sure that the image appears above the text when screen size decreases below 768 */
+    .hero-section {
+        flex-direction:column-reverse;
+    }
+
+    .hero-section .text .Yo{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 768px){
+    /* SECTION 3 Skills on mobile */
+    .skills-section {
+        padding: 0 20px;
+    }
+}
+
