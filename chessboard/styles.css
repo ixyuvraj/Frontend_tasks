@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Chessboard {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: repeat(8, auto);
+    gap: 0px;
+    border: 8px solid black;
+    margin: 10px;
+    
+}
+
+.Chessboard div{
+    background: black;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+
+}
+
+.Chessboard div:nth-child(16n+1),
+.Chessboard div:nth-child(16n+3),
+.Chessboard div:nth-child(16n+5),
+.Chessboard div:nth-child(16n+7),
+.Chessboard div:nth-child(16n+10),
+.Chessboard div:nth-child(16n+12),
+.Chessboard div:nth-child(16n+14),
+.Chessboard div:nth-child(16n+16){
+    background: white;
+}
+
