@@ -1,0 +1,186 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+
+.top_half{
+    background-color: rgba(229, 234, 236);
+    width: auto;
+    height: 716px;
+    position: relative; 
+    overflow: visible;   
+    padding-bottom: 20px;
+}
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav .left{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items:last baseline baseline;
+    margin-top: 100px;
+    padding-left: 30px;
+   
+    
+}
+
+nav .left img{
+    height : 70px;
+    width: auto;
+}
+
+.left > *:not(:first-child){
+    border-left: 1px solid black;
+    padding-left: 25px;
+    padding-right: 1px;
+}
+
+.DoE_logo,
+.ADQ {
+    display: grid;
+    grid-template-rows: auto auto; 
+    justify-items: center;         
+    row-gap: 8px;                  
+}
+
+.DoE_logo span,
+.ADQ span {
+    font-size: 10px;               
+    font-weight: 600;
+}
+
+
+
+
+nav .right {
+    position: relative;
+    width: 700px;
+    
+}
+
+
+nav .right .header_front img {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+nav .right .header_back img{
+    width: 1000px;
+}
+
+nav .right .header_front {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100%;
+    z-index: 2;
+    
+}
+
+nav .right .header_back {
+    opacity: 0.2;
+    z-index: 1;
+    position: absolute;
+    top: -30px;
+    left: -260px;
+    width: 100%;
+}
+
+
+
+.header_text {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 3px;                 
+    margin-top: 100px;
+    padding-left: 30px;
+}
+
+.header_text h1 {
+    margin: 0;             
+    font-weight: bold;      
+    line-height: 1.1;       
+}
+
+
+.line_1 h1 {
+    font-size: 85px;
+    color: rgb(76 141 83);
+}
+
+.line_2 h1 {
+    font-size: 85px 
+}
+
+.line_3 h1{
+    font-size: 85px;
+}
+
+.line_3 .tagline{
+    color: rgb(115 159 188);
+}
+
+
+
+
+.random_text{
+    margin-top: 100px;
+    padding-left: 40px;
+    font-size: 20px;
+    padding-right: 60px;
+}
+
+
+
+.sup_by{
+    padding-left: 55px;
+    margin-top: 20px;
+   color: rgba(108, 147, 165);
+   font-weight: 1000;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+
+.first_row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items:last baseline baseline;
+    margin-top: 20px;
+    padding-left: 30px;
+   margin-bottom: 40px;
+    
+}
+
+.first_row img{
+    height : 100px;
+    width: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.first_row > *:not(:first-child){
+    border-left: 1px solid black;
+    padding-left: 25px;
+    padding-right: 1px;
+}
